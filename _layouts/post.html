@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<script>
+  renderMathInElement(document.body, {delimiters: [{ left: '$$', right: '$$', display: true },{ left: '\\[', right: '\\]', display: true },{ left: '$', right: '$', display: false },{ left: '\\(', right: '\\)', display: false },{ left: '$$$', right: '$$$', display: false }]});
+</script>
 <div class="row">
   <div class="col-md-10 offset-md-1">
       <article id="post{{ page.id | replace:"/","-" }}" class="post post{{ page.id | replace:"/","-" }}">
